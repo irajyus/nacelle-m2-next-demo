@@ -22,20 +22,20 @@ const ProductGallery = ({ product }) => {
                 className="relative flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-offset-4 focus:ring-opacity-50"
                 onClick={() => setActiveImage(image)}
               >
-                {/* <Image
-                  src={image.thumbnailSrc}
+                <Image
+                  src={image.src}
                   alt={image.altText}
-                  width={130}
-                  height={96}
+                  width={84}
+                  height={106}
                   className="rounded-md"
-                /> */}
+                />
               </button>
             ))}
           </div>
         </div>
         <div className="w-full aspect-w-1 aspect-h-1 relative rounded-lg overflow-hidden">
           <Image
-            src={`https://zyed-001.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.static/-/Sites-apparel-m-catalog/default/dw2413bfcb/images/${activeImage.src}`}
+            src={activeImage.src}
             alt="altText"
             layout="fill"
             objectFit="cover"
