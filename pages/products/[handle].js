@@ -65,7 +65,7 @@ export async function getStaticProps({ params }) {
     // (https://nacelle.com/docs/querying-data/storefront-sdk)
     const { products } = await nacelleClient.query({
         query: PAGE_QUERY,
-        variables: { handle: params.handle.toUpperCase() },
+        variables: { handle: params.handle },
     });
 
     const content = await nacelleClient.content({

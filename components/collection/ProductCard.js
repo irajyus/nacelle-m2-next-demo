@@ -85,8 +85,6 @@ function ProductCard({ product }) {
                                 <>
                                     <Image
                                         src={
-                                            process.env
-                                                .NEXT_PUBLIC_BASE_STOREFRONT_IMAGE_URL +
                                             product.content?.featuredMedia.src
                                         }
                                         alt={product.content?.featuredMedia.id}

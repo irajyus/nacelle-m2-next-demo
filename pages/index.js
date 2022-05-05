@@ -18,7 +18,7 @@ export default function Home(props) {
     );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
     // Performs a GraphQL query to Nacelle to get product data,
     // using the handle of the current page.
     // (https://nacelle.com/docs/querying-data/storefront-sdk)

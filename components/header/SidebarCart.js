@@ -159,9 +159,6 @@ const SidebarCart = () => {
                                                                         <div className="relative flex-shrink-0 border border-gray-200 rounded-md overflow-hidden w-20 h-20">
                                                                             <Image
                                                                                 src={
-                                                                                    process
-                                                                                        .env
-                                                                                        .NEXT_PUBLIC_BASE_STOREFRONT_IMAGE_URL +
                                                                                     item
                                                                                         .variant
                                                                                         .featuredMedia

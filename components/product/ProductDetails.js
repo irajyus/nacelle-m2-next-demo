@@ -28,7 +28,7 @@ const ProductDetails = ({ product }) => {
             (v) => v.availableForSale && v.price
         );
         setSelectedVariant(firstAvailableVariant);
-        setSelectedOptions(firstAvailableVariant.content.selectedOptions || []);
+        setSelectedOptions(firstAvailableVariant.content?.selectedOptions || []);
         setQuantity(1);
     }, [product]);
 
